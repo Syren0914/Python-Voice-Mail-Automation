@@ -14,7 +14,7 @@ from dotenv import load_dotenv, dotenv_values
 load_dotenv()
 
 Sending_email = os.environ.get("EMAIL")
-email_password = "#APP PASSWORD"
+email_password = os.environ.get("PASSWORD")
 PORT = 587
 EMAIL_SERVER = "smtp.gmail.com"
 
